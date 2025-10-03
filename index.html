@@ -18,7 +18,7 @@
                 <h2 id="my-title">ITF Simple Bank</h2>
                 <p>Welcome to my first HTML + CSS + JS website!</p>
             </div>
-            <textarea name="show-data" id="show-data" class="show-data"></textarea>
+            <textarea name="show-data" id="show-data" class="show-data" disabled></textarea>
             <div class="account">
                 <div class="account-overview">
                     <div class="account-informaiton">
@@ -28,51 +28,45 @@
                     </div>
                     <div class="balance-information">
                         <h2>Balance Informaion</h2>
-                        <form>
-                            <div class="current-account">
-                                <label for="current-account">Current account balance:</label>
-                                <input type="text" name="current-account" class="current-account-input" value="1000">
-                            </div>
-                            <div class="current-cash">
-                                <label for="current-cash">Current cash balance:</label>
-                                <input type="text" name="current-cash" class="current-cash-input" value="1000">
-                            </div>
-                            <button>Change</button>
-                        </form>
+                        <div class="current-account">
+                            <label for="current-account">Current account balance:</label>
+                            <input type="text" name="current-account" class="current-account-input" value="1000">
+                        </div>
+                        <div class="current-cash">
+                            <label for="current-cash">Current cash balance:</label>
+                            <input type="text" name="current-cash" class="current-cash-input" value="1000">
+                        </div>
+                        <button onclick="handleChange()">Change</button>
                     </div>
                     <div class="bank-oparation">
                         <h2>Bank Operation</h2>
-                        <form>
-                            <select name="dp-wt-d" id="dp-wt-d">
-                                <option value="deposit">Deposit</option>
-                                <option value="withdraw">Withdraw</option>
-                            </select>
-                            <input type="text" name="amount-dp-wt" id="amount-dp-wt">
-                            <button>Proceeds</button>
-                        </form>
+                        <select name="dp-wt-d" id="dp-wt-d" class="command-select">
+                            <option value="deposit">Deposit</option>
+                            <option value="withdraw">Withdraw</option>
+                        </select>
+                        <input type="text" name="amount-dp-wt" id="amount-dp-wt" class="amount-command" value="1">
+                        <button onclick="handleOperate()">Proceeds</button>
                     </div>
                 </div>
                 <div class="financial-tools">
                     <div class="currency-converter">
-                        <h2>Currency Converter</h2>
-                        <form>
-                            <div class="input-balance">
-                                <label for="input-balance">Input balance:</label>
-                                <input type="text" name="input-balance">
-                            </div>
-                            <div class="output-balance">
-                                <label for="output-balance">Output balance:</label>
-                                <input type="text" name="output-balance">
-                            </div>
-                            <div class="input-currency">
-                                <label for="input-currency">Input Currency:</label>
-                                <select name="currency" id="currency">
-                                    <option value="usd">USD</option>
-                                    <option value="thb">THB</option>
-                                </select>
-                                <button>Convert</button>
-                            </div>
-                        </form>
+                    <h2>Currency Converter</h2>
+                        <div class="input-balance">
+                            <label for="input-balance">Input balance:</label>
+                            <input type="text" name="input-balance">
+                        </div>
+                        <div class="output-balance">
+                            <label for="output-balance">Output balance:</label>
+                            <input type="text" name="output-balance">
+                        </div>
+                        <div class="input-currency">
+                            <label for="input-currency">Input Currency:</label>
+                            <select name="currency" id="currency">
+                                <option value="usd">USD</option>
+                                <option value="thb">THB</option>
+                            </select>
+                            <button>Convert</button>
+                        </div>
                     </div>
                 </div>
             </div>
