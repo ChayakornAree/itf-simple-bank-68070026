@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Noto Sans Thai", sans-serif;
+}
 body {
-    margin: 0;
+    margin: 0 0 32px 0;
     padding: 0;
 }
 
@@ -8,14 +12,153 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
-    background-color: #1665E5;
+    width: auto;
+    background-color: #636CCB;
     color: white;
 }
 
+.overview-text{
+    font-size: 2em;
+    margin-bottom: -0.25em;
+}
+
+.account-informaiton{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25em;
+}
+.img-icon {
+    width: 75px;
+    height: 75px;
+}
 .container {
     margin: 8px 32px;
 }
 
-#my-title {
-    color: rebeccapurple;
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5em;
+}
+.text-title {
+    margin-left: 1em;
+}
+
+.text-title h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#show-data {
+    margin-top: 1em;
+    margin-bottom: -1.5em;
+    width: 100%;
+    height: 20vh;
+    resize: none;
+}
+
+.account {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+}
+
+.title-information {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.current-cash-input, .current-account-input {
+    padding: 0.25em 1em 0.25em 1em;
+    border-radius: 6px;
+    border: 1px solid #aaaaaa;
+}
+
+.current-account , .current-cash{
+    margin-bottom: 1em;
+}
+
+.current-cash input{
+    margin-left: 2.25em;
+}
+
+.current-account input{
+    margin-left: 0.5em;
+}
+.on-change-btn-convert{
+    padding: 0.6em 2em;
+    border: none;
+    color: black;
+    background-color: #FAB12F;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.on-change-btn-convert:hover{
+    border-radius: 6px;
+    background-color: transparent;
+    border: 2px solid #FAB12F;
+}
+
+.on-change-btn-proceed{
+    padding: 0.6em 2em;
+    border: none;
+    color: white;
+    background-color: #04AA6D;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.on-change-btn-proceed:hover{
+    border-radius: 6px;
+    background-color: transparent;
+    border: 2px solid #04AA6D;
+    color: black;
+}
+
+.on-change-btn {
+    padding: 0.6em 2em;
+    border: none;
+    color: white;
+    background-color: #3985ff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.on-change-btn:hover{
+    border-radius: 6px;
+    background-color: transparent;
+    border: 2px solid #3985ff;
+    color: black;
+}
+
+.command-select, .amount-command{
+    padding: 0.4em 2em;
+    border-radius: 6px;
+    border: 1px solid #aaaaaa;
+}
+
+.input-balance-side, .output-balance-side{
+    padding: 0.25em 1em 0.25em 1em;
+    border-radius: 6px;
+    border: 1px solid #aaaaaa;
+}
+
+.input-balance, .output-balance{
+    margin-bottom: 10px;
+}
+
+.input-balance input{
+    margin-left: 1.25em;
+}
+.output-balance input{
+    margin-left: 0.25em;
+}
+
+.input-currency select{
+    margin-left: 0.5em;
 }
