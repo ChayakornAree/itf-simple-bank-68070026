@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     font-family: "Noto Sans Thai", sans-serif;
-}
-body {
-    margin: 0 0 32px 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -13,24 +11,24 @@ nav {
     align-items: center;
     padding: 0 16px;
     width: auto;
+    height: 8vh;
     background-color: #636CCB;
     color: white;
 }
 
 .overview-text{
     font-size: 2em;
-    margin-bottom: -0.25em;
 }
 
 .account-informaiton{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1.25em;
+    margin-bottom: 2em;
 }
 .img-icon {
     width: 75px;
-    height: 75px;
+    margin-right: 1em;
 }
 .container {
     margin: 8px 32px;
@@ -39,8 +37,10 @@ nav {
 .title {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin-bottom: 0.5em;
 }
+
 .text-title {
     margin-left: 1em;
 }
@@ -52,7 +52,6 @@ nav {
 
 #show-data {
     margin-top: 1em;
-    margin-bottom: -1.5em;
     width: 100%;
     height: 20vh;
     resize: none;
@@ -61,7 +60,6 @@ nav {
 .account {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 1rem;
 }
 
 .title-information {
@@ -70,25 +68,32 @@ nav {
 }
 
 .current-cash-input, .current-account-input {
-    padding: 0.25em 1em 0.25em 1em;
+    padding: 0.5em 1em 0.5em 1em;
     border-radius: 6px;
     border: 1px solid #aaaaaa;
 }
 
+.current-information {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .current-account , .current-cash{
-    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.current-cash input{
-    margin-left: 2.25em;
+.current-account-text , .current-cash-text{
+    width: 35%;
+    padding-right: .25em;
 }
 
-.current-account input{
-    margin-left: 0.5em;
-}
 .on-change-btn-convert{
     padding: 0.6em 2em;
-    border: none;
+    border: 1px solid #FAB12F;
     color: black;
     background-color: #FAB12F;
     border-radius: 6px;
@@ -99,12 +104,12 @@ nav {
 .on-change-btn-convert:hover{
     border-radius: 6px;
     background-color: transparent;
-    border: 2px solid #FAB12F;
+    border: 1px solid #FAB12F;
 }
 
 .on-change-btn-proceed{
     padding: 0.6em 2em;
-    border: none;
+    border: 1px solid #04AA6D;
     color: white;
     background-color: #04AA6D;
     border-radius: 6px;
@@ -115,24 +120,24 @@ nav {
 .on-change-btn-proceed:hover{
     border-radius: 6px;
     background-color: transparent;
-    border: 2px solid #04AA6D;
+    border: 1px solid #04AA6D;
     color: black;
 }
 
 .on-change-btn {
     padding: 0.6em 2em;
-    border: none;
+    border: 1px solid #3985ff;
     color: white;
     background-color: #3985ff;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: .5em;
 }
 
 .on-change-btn:hover{
-    border-radius: 6px;
     background-color: transparent;
-    border: 2px solid #3985ff;
+    border: 1px solid #3985ff;
     color: black;
 }
 
@@ -143,22 +148,23 @@ nav {
 }
 
 .input-balance-side, .output-balance-side{
-    padding: 0.25em 1em 0.25em 1em;
+    padding: 0.5em 1em 0.5em 1em;
     border-radius: 6px;
     border: 1px solid #aaaaaa;
 }
 
-.input-balance, .output-balance{
-    margin-bottom: 10px;
+.input-currency button {
+    margin-left: 1em;
 }
 
-.input-balance input{
-    margin-left: 1.25em;
-}
-.output-balance input{
-    margin-left: 0.25em;
+.input-balance, .output-balance , .input-currency{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: .5em;
 }
 
-.input-currency select{
-    margin-left: 0.5em;
+.input-balance-text, .output-balance-text , .input-currency-text{
+    width: 8em;
 }

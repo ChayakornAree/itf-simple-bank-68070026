@@ -14,7 +14,7 @@
         </nav>
         <div class="container">
             <div class="title">
-                <img src="img/Cool.png" height="160" alt="Cool" />
+                <img src="img/coin.png" height="120" alt="Cool" />
                 <div class="text-title">
                     <h2>ITF Simple Bank</h2>
                     <p>Welcome to my first HTML + CSS + JS website!</p>
@@ -29,8 +29,10 @@
                         <img src="/img/resume.png" alt="resume" class="img-icon">
                         <div>
                             <h2 class="title-information">Account Informaion</h2>
-                            <p>Name: Chayakorn Aree</p>
-                            <p>Type: Savings Account</p>
+                            <div class="current-information">
+                                <p>Name: Chayakorn Aree</p>
+                                <p>Type: Savings Account</p>
+                            </div>
                         </div>
                     </div>
                     <div class="account-informaiton">
@@ -38,11 +40,11 @@
                         <div>
                             <h2 class="title-information">Balance Informaion</h2>
                             <div class="current-account">
-                                <label for="current-account">Current account balance:</label>
+                                <p class="current-account-text">Current account balance:</p>
                                 <input type="text" name="current-account" class="current-account-input" value="1000">
                             </div>
                             <div class="current-cash">
-                                <label for="current-cash" class="text-balance-form">Current cash balance:</label>
+                                <p class="current-cash-text">Current cash balance:</p>
                                 <input type="text" name="current-cash" class="current-cash-input" value="1000">
                             </div>
                             <button onclick="handleChange()" class="on-change-btn">Change</button>
@@ -69,15 +71,15 @@
                         <div>
                             <h2 class="title-information">Currency Converter</h2>
                             <div class="input-balance">
-                                <label for="input-balance">Input balance:</label>
+                                <p class="input-balance-text">Input balance:</p>
                                 <input type="text" name="input-balance" class="input-balance-side">
                             </div>
                             <div class="output-balance">
-                                <label for="output-balance">Output balance:</label>
+                                <p class="output-balance-text">Output balance:</p>
                                 <input type="text" name="output-balance" class="output-balance-side">
                             </div>
                             <div class="input-currency">
-                                <label for="input-currency">Input Currency:</label>
+                                <p class="input-currency-text">Input Currency:</p>
                                 <select name="currency" id="currency" class="command-select">
                                     <option value="usd">USD</option>
                                     <option value="thb">THB</option>
