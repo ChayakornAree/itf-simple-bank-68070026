@@ -66,3 +66,21 @@ function handleOperate(){
     }
     count ++
 }
+
+async function handleCurrency () {
+    const type = document.querySelector("#currency").value
+    const amount = document.querySelector(".input-balance-side").value
+    
+    const response = await fetch("http://localhost:3000/currency", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    type: type,
+                    amount: amount,
+                })
+            })
+            
+    const result = await response.json();
+    const output = document.querySelector(".output-balance-side")
+    output.value = result.data
+}
